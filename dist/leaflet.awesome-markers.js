@@ -71,7 +71,14 @@
                 if(options.iconColor === 'white' || options.iconColor === 'black') {
                     iconColorClass = "icon-" + options.iconColor;
                 } else {
-                    iconColorStyle = "style='color: " + options.iconColor + "' ";
+                    var fontSizeSpec = "";
+//                    if (options.markerColor == "transparent")
+//                        fontSizeSpec = "font-size: 28px;";
+                    var opacitySpec = "";
+                    if (options.iconOpacity)
+                        opacitySpec = "opacity: " + options.iconOpacity;
+
+                    iconColorStyle = "style='color: " + options.iconColor + ";" + fontSizeSpec + opacitySpec + "' ";
                 }
             }
 

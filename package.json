@@ -1,0 +1,9 @@
+{
+    "name": "leaflet-awesome-markers",
+    "version": "0.0.1",
+    "private": true,
+    "description": "Customized version of Leaflet.AwesomeMarkers plugin",
+    "devDependencies": {
+        "browserify": "~3.19.0"
+    }
+}
